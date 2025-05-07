@@ -6,7 +6,9 @@ import java.io.*;
 public class ProblemSetTest {
 
    //Create your tests here if you want any
-
+   public void ToStringTest(){
+      Card card=new Card()
+   }
    /*
 
    //Example Test

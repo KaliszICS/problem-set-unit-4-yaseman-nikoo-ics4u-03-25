@@ -16,5 +16,17 @@ public class Card{
     public int getValue(){
         return this.value;
     }
-    public String 
+    public String toString(){
+        return this.name +" of "+ this.suit;
+    }
+    public boolean equals(Object obj){
+        Card card=(Card)obj;
+        if(card==null || !card.getClass().equals(this.getClass())){
+            return false;
+        }
+        if(card.getName().equals(this.name)&& card.getValue()==this.value&& card.getName().equals(this.name)){
+            return true;
+        }
+        return false;
+    }
 }

@@ -1,4 +1,4 @@
-public class DiscardPile{
+/*public class DiscardPile{
     private Card[] discardPile;
     public DiscardPile(Card[] card){
         this.discardPile=card;
@@ -14,11 +14,25 @@ public class DiscardPile{
     }
     public Card[] addCard(Card card){
         Card[] newDiscardPile= new Card[this.discardPile.length];
-        newDiscardPile[this.discardPile.length-1]= card
+        newDiscardPile[this.discardPile.length-1]= card;
         for(int i=0;i<this.discardPile.length;i++){
             newDiscardPile[i]=this.discardPile[i];
         }
         this.discardPile=newDiscardPile;
         return this.discardPile;
     }
-}
+    public Card[] removeCard(Card card){
+        int index=-1;
+        for(int i=0; i<this.discardPile.length;i++){
+            if(this.discardPile[i].getName().equals(card.getName())&& this.discardPile[i].getValue()==card.getValue()&&this.discardPile[i].getSuit().equals(card.getSuit())){
+                index=i
+            }
+        }
+        Card[] newDiscardPile=new Card[this.discardPile.length-1];
+        for(int z=0;z<this.discrdPile.length;z++){
+            if(z!=index){
+                newDiscardPile[i]=this.discardPile[i];
+            }
+        }
+    }
+}*/

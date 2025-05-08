@@ -5,7 +5,7 @@ public class Card{
     public Card(String name, String suit, int value){
         this.name=name;
         this.suit=suit;
-        this.value=vlue;
+        this.value=value;
     }
     public String getName(){
         return this.name;
@@ -20,7 +20,7 @@ public class Card{
         return this.name +" of "+ this.suit;
     }
     public boolean equals(Object obj){
-        Card card=(Card)obj;
+        Card card=(Card) obj;
         if(card==null || !card.getClass().equals(this.getClass())){
             return false;
         }

@@ -1,0 +1,10 @@
+K(30%): 100
+I(30%): 90
+C(10%): 100
+A(30%): 93
+94.9%
+equals should convert to Card AFTER you check that it is a card and not null.
+No if statement required for final comparison, just return the condition
+Using an arraylist on our backend would simplify your code a lot.
+reshuffle should use addCard and/or shuffle so you don't need to write their code again.
+player draw should not add the card they draw if it is null (deck is empty)
